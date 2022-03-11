@@ -1,0 +1,264 @@
+.body{
+    margin-top:20px;
+}
+/*
+Blog post entries
+*/
+
+.entrycard {
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.entrycontent {
+    background-color: #fff;
+    padding: 36px 36px 36px 36px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.entrycontent .entrytitle a {
+    color: #333;
+}
+
+.entrycontent .entrytitle a:hover {
+    color: #4782d3;
+}
+
+.entrycontent .entrymeta .span {
+    font-size: 12px;
+}
+
+.entrytitle {
+    font-size: .95rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.entrythumb {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.entrythumb img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.entrythumb .thumbhover {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(71, 130, 211, 0.85);
+    display: block;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 40px;
+    line-height: 100px;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    text-align: center;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.entrythumb:hover .thumbhover {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+
+.articlepost {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 70px;
+}
+
+.articlepost .postthumb {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.articlepost .postthumb .postoverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    opacity: 0;
+}
+
+.articlepost .postthumb .postoverlay .span {
+    width: 100%;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    transform: translateY(70%);
+    -webkit-transform: translateY(70%);
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    height: 100%;
+    color: #fff;
+}
+
+.articlepost .postthumb:hover .postoverlay {
+    opacity: 1;
+}
+
+.articlepost .postthumb:hover .postoverlay .span {
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+}
+
+.postcontent .posttitle {
+    font-weight: 500;
+}
+
+.postmeta {
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.postmeta .li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.postmeta .li a {
+    color: #999;
+    font-size: 13px;
+}
+
+.postmeta .li a:hover {
+    color: #4782d3;
+}
+
+.postmeta .li .i {
+    margin-right: 5px;
+}
+
+.postmeta .li:after {
+    margin-top: -5px;
+    content: "/";
+    margin-left: 10px;
+}
+
+.postmeta .li:lastchild:after {
+    display: none;
+}
+
+.postmasonry .masonrytitle {
+    font-weight: 500;
+}
+
+.sharebuttons .li {
+    vertical-align: middle;
+}
+
+.sharebuttons .li .a {
+    margin-right: 0px;
+}
+
+.postcontent .fa {
+    color: #ddd;
+}
+
+.postcontent .a .h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0px;
+}
+
+.article-post .owl-carousel {
+    margin-bottom: 20px !important;
+}
+
+.postmasonry .h4 {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.mb40 {
+    margin-bottom: 40px !important;
+}
+.mb30 {
+    margin-bottom: 30px !important;
+}
+.mediabody .h5 .a {
+    color: #555;
+}
+.categories .li .a:before {
+    content: "\f0da";
+    font-family: 'FontAwesome';
+    margin-right: 5px;
+}
+/*
+Template sidebar
+*/
+
+.sidebartitle {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.categories .li {
+    vertical-align: middle;
+}
+
+.categories .li > ul {
+    padding-left: 15px;
+}
+
+.categories li > ul > li > a {
+    font-weight: 300;
+}
+
+.categories li a {
+    color: #999;
+    position: relative;
+    display: block;
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.categories li a:before {
+    content: "\f0da";
+    font-family: 'FontAwesome';
+    margin-right: 5px;
+}
+
+.categories li a:hover {
+    color: #444;
+    background-color: #f5f5f5;
+}
+
+.categories > li.active > a {
+    font-weight: 600;
+    color: #444;
+}
+
+.media-body .h5 {
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.media-body .h5 .a {
+    color: #555;
+}
+
+.media-body .h5 .a:hover {
+    color: #4782d3;
+}
